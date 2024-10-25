@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="block">
+        </div>
+    </div>
+    <div class="question">
+        <div>?</div>
+    </div>
+    <script>
+        function moveSquare(position) {
+            return new Promise((resolve) => {
+                const square = document.querySelector(".block");
+                square.style.transform = position;
+                resolve();
+            });
+        }
+
+        async function animateSquare() {
+            const positions = [
+                'translate(0, 0)',
+                'translate(calc(100vw - 100px), 0)',
+                'translate(calc(100vw - 100px), calc(100vh - 100px))',
+                'translate(0, calc(100vh - 100px))',
+                'translate(0, 0)'
+            ];
+
+            for (let i = 0; i < positions.length; i++) {
+                await moveSquare(positions[i]);
+                await new Promise((resolve) => setTimeout(resolve, 2000));
+            }
+        }
+        animateSquare();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+.block {
+    position: absolute;
+}
+.question {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(144, 144, 144);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.question > div {
+    color: rgb(245, 245, 245);
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all 1s ease;
+}

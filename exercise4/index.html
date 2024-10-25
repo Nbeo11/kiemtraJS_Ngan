@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="video-container" id="videoContainer">
+        <video id="video" width="600">
+            <source src="./video/lastChristmas.mp4" type="video/mp4">
+
+        </video>
+        <img id="pauseButton" src="./images/pause2.png" alt="">
+        <div class="controls">
+            <div class="nameVideo">
+                <div>Last Christmas</div>
+                <div id="timeCount"></div>
+            </div>
+            <div class="progressContainer" id="progressContainer">
+                <div class="progress" id="progress"> </div>
+                <div id="progressHandle"></div>
+            </div>
+            <div id="buttonControl">
+                <div>
+                    <button>
+                        <img id="playPause" src="./images/play.png" alt="">
+                    </button>
+                    <button>
+                        <img id="previous" src="./images/previous.png" alt="">
+                    </button>
+                    <button>
+                        <img id="next" src="./images/next.png" alt="">
+                    </button>
+                </div>
+                <div>
+                    <button>
+                        <img id="muteToggle" src="./images/volumn.png" alt="">
+                    </button>
+                    <button>
+                        <img id="fullscreenToggle" src="./images/fullScreen.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
